@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>An Adventure Ride</title>
+    <meta charset="UTF-8" />
+    <style>
+      /* CSS样式表 */
+      #story-container {
+        position: relative;
+        width: 650px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        overflow-y: scroll;
+        height: 500px;
+      }
+
+      #options-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 50px; /* 假设按钮高度为50px */
+      }
+
+      #options {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #time-pill-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 180px;
+        height: 100%;
+        background-color: #f1f1f1;
+        z-index: 1;
+        overflow-x: hidden;
+        padding-top: 60px;
+      }
+
+      #search-bar {
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        border-top: #333 1px solid;
+      }
+
+      #options-history {
+        padding-top: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="story-container"></div>
+    <div id="options-container">
+      <div id="options"></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='mainpageinter.js')
+  }}"
+    ></script>
+    <!-- <div>
+      <audio id="bgm" controls>
+        <source
+          src="https://ia802907.us.archive.org/28/items/theweekndhardesttoloveaudio/The%20Weeknd%20-%20Hardest%20To%20Love%20%28Audio%29.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div> -->
+    <div id="time-pill-container">
+      <div id="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div id="options-history">
+        <h3>Options History:</h3>
+        <ul></ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 1. Rush to your room 2. Rush to the car 3. Take another look calmly -->
+<!-- 1. Rush to your room 2. Take another look calmly -->
+<!-- [Users are required to input keywords such as "take off shoes"]
+Wrong situation: 3 in a loop until it is correct
+New function: "Instinct", a prompt will appear after clicking to use it. There is only one chance for the entire game. -->
+<!-- 1. Go ahead 2. Pick up the paper -->
+<!-- 1. Go east by instinct 2.? /Take out picked confetti (if no paper was picked up earlier, this option will be displayed as ? and cannot be clicked.)-->
+<!-- 【The user needs to input KDO1773】  Incorrect situation--" "Uh, the driver said that there are no documents in the car." The uncle was translating the content on the other end of the phone. -->
+<!-- 1. "Relax, Sia, you can do it. Just like before."
+2. "You're not alone, Sia. Life isn't that bad."
+3. "Don't care what other people think, live your own life." -->

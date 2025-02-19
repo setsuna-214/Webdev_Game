@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>An Adventure Ride</title>
+    <meta charset="UTF-8" />
+    <style>
+      /* CSS样式表 */
+      #newstory-container {
+        position: relative;
+        width: 650px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        overflow-y: scroll;
+        height: 500px;
+      }
+
+      #newoptions-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 50px; /* 假设按钮高度为50px */
+      }
+
+      #newoptions {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="newstory-container"></div>
+    <div id="newoptions-container">
+      <div id="newoptions"></div>
+    </div>
+    <script src="storygenerator.js"></script>
+  </body>
+</html>
+
+<!-- 1. Rush to your room 2. Rush to the car 3. Take another look calmly -->
+<!-- 1. Rush to your room 2. Take another look calmly -->
+<!-- [Users are required to input keywords such as "take off shoes"]
+Wrong situation: 3 in a loop until it is correct
+New function: "Instinct", a prompt will appear after clicking to use it. There is only one chance for the entire game. -->
+<!-- 1. Go ahead 2. Pick up the paper -->
+<!-- 1. Go east by instinct 2.? /Take out picked confetti (if no paper was picked up earlier, this option will be displayed as ? and cannot be clicked.)-->
+<!-- 【The user needs to input KDO1773】  Incorrect situation--" "Uh, the driver said that there are no documents in the car." The uncle was translating the content on the other end of the phone. -->
+<!-- 1. "Relax, Sia, you can do it. Just like before."
+2. "You're not alone, Sia. Life isn't that bad."
+3. "Don't care what other people think, live your own life." -->
